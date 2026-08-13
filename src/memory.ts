@@ -5,7 +5,7 @@
  */
 
 import type { MemoryEntry } from './types.ts'
-import { parseFrontmatter, extractMetadataType } from './parser.ts'
+import { parseFrontmatter, extractMetadataType } from './parser.js'
 
 /** Dynamically import Node.js fs/promises (works in both ESM and CJS). */
 async function fs() {

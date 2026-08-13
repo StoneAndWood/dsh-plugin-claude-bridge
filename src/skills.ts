@@ -5,7 +5,7 @@
  */
 
 import type { SkillEntry } from './types.ts'
-import { parseFrontmatter } from './parser.ts'
+import { parseFrontmatter } from './parser.js'
 
 /** Dynamically import Node.js fs/promises. */
 async function fs() {

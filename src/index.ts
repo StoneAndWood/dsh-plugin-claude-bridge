@@ -14,8 +14,8 @@
 
 import { homedir } from 'node:os'
 import { join } from 'node:path'
-import { loadMemories, renderMemories, encodeProjectPath } from './memory.ts'
-import { loadSkills, renderSkillCatalog } from './skills.ts'
+import { loadMemories, renderMemories, encodeProjectPath } from './memory.js'
+import { loadSkills, renderSkillCatalog } from './skills.js'
 
 /** Plugin name for dsh diagnostics. */
 export const name = 'claude-bridge'
