@@ -1,0 +1,13 @@
+# Claude Code → DeepSeek Harness bridge plugin.
+# Injects Claude Code's memory, skills, and global instructions
+# into the dsh system prompt.
+- insert:
+    - id: claude-bridge
+      name: dsh-plugin-claude-bridge
+      inject: []
+      config:
+        maxMemoryBytes: 8192
+        maxSkills: 30
+        enableMemory: true
+        enableSkills: true
+        enableGlobalInstructions: true

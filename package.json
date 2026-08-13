@@ -1,0 +1,58 @@
+{
+  "name": "dsh-plugin-claude-bridge",
+  "version": "0.1.0",
+  "description": "Bridge Claude Code's memory, skills, and configuration into DeepSeek Harness — zero migration, full compatibility",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "claude-code",
+    "memory",
+    "skills",
+    "migration",
+    "bridge"
+  ],
+  "author": "YYTbit",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YYTbit/dsh-plugin-claude-bridge"
+  },
+  "bugs": {
+    "url": "https://github.com/YYTbit/dsh-plugin-claude-bridge/issues"
+  },
+  "homepage": "https://github.com/YYTbit/dsh-plugin-claude-bridge#readme",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
