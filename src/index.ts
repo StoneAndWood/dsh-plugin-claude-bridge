@@ -20,8 +20,8 @@ import { loadSkills, renderSkillCatalog } from './skills.js'
 /** Plugin name for dsh diagnostics. */
 export const name = 'claude-bridge'
 
-/** No required dsh services — this plugin is self-contained. */
-export const inject: string[] = []
+/** Required dsh services. */
+export const inject = ['systemPrompt']
 
 /** Plugin configuration. */
 export interface Config {
